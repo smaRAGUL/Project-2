@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 80%;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+h1, h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+th {
+  background: #2c3e50;
+  color: #fff;
+}
+.btn, button {
+  display: inline-block;
+  background: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.edit {
+  color: #2980b9;
+  text-decoration: none;
+}
+.delete {
+  color: #e74c3c;
+  text-decoration: none;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

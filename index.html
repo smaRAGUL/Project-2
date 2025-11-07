@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teachers Record Management</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Teachers Record Management System</h1>
+    <a href="/add" class="btn">Add New Teacher</a>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Department</th>
+        <th>Actions</th>
+      </tr>
+      {% for t in teachers %}
+      <tr>
+        <td>{{ t[0] }}</td>
+        <td>{{ t[1] }}</td>
+        <td>{{ t[2] }}</td>
+        <td>{{ t[3] }}</td>
+        <td>{{ t[4] }}</td>
+        <td>{{ t[5] }}</td>
+        <td>
+          <a href="/edit/{{ t[0] }}" class="edit">Edit</a>
+          <a href="/delete/{{ t[0] }}" class="delete" onclick="return confirm('Delete this record?');">Delete</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</body>
+</html>
